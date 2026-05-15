@@ -49,3 +49,5 @@ app/src/main/assets/model.tflite
 *   **Permissions**: Accompanist Permissions
 *   **Local Storage**: Jetpack DataStore (Preferences) & JSON via Gson
 *   **Localization**: AndroidX AppCompat API (Per-App Language Preferences)
+
+The Project made in May 2025
