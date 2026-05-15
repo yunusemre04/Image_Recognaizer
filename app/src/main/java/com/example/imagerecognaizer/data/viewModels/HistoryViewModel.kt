@@ -53,20 +53,20 @@ class HistoryViewModel (application: Application) : AndroidViewModel(application
         }
     }
     fun removeFromHistory(context: Context, item: HistoryItem) {
-        // Listeyi güncelle (önce UI'dan kaldır)
+        // Update the list (remove from UI first)
         val updatedList = _historyList.value.toMutableList().apply {
             remove(item)
         }
         _historyList.value = updatedList
 
-        // Dosyayı sil (opsiyonel)
+        // Delete the file (optional)
         try {
             File(item.imagePath).delete()
         } catch (e: Exception) {
-            Log.e("HistoryViewModel", "Dosya silinemedi: ${e.message}")
+            Log.e("HistoryViewModel", "File could not be deleted: ${e.message}")
         }
 
-        // DataStore ile kaldır
+        // Remove from DataStore
         viewModelScope.launch(Dispatchers.IO) {
             val dataStore = HistoryDataStore(context)
             dataStore.removeFromHistory(item)

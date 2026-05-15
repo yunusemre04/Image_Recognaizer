@@ -70,7 +70,7 @@ fun GalleryClassifierScreen(navController: NavController) {
         uri?.let {
             bitmap = loadBitmapFromUri(context, it)
             results = emptyList() // reset results
-            hasAddedToHistory = false // yeni görsel için tekrar eklemeye izin ver
+            hasAddedToHistory = false // Allow re-adding for new images
         }
     }
 
@@ -131,7 +131,7 @@ fun GalleryClassifierScreen(navController: NavController) {
                         Text(stringResource(R.string.classify))
                     }
 
-                    // Sonuç varsa geçmişe sadece bir kere ekle
+                    // Add to history only once if there's a result
                     if (results.isNotEmpty() && !hasAddedToHistory) {
                         LaunchedEffect(results) {
                             val topResult = results.first()

@@ -63,15 +63,15 @@ dependencies {
 
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    // Kamera/Galeri erişimi
+    // Camera/Gallery access
     implementation ("androidx.activity:activity-ktx:1.3.1")
     implementation ("androidx.fragment:fragment-ktx:1.3.6")
     implementation("com.google.accompanist:accompanist-permissions:0.31.5-beta")
     // DataStore (Preferences)
     implementation ("androidx.datastore:datastore-preferences:1.0.0")
-    // Gson (JSON serileştirme/deserileştirme)
+    // Gson (JSON serialization/deserialization)
     implementation ("com.google.code.gson:gson:2.10.1")
-    // Kotlin Coroutines (DataStore için gereklidir)
+    // Kotlin Coroutines (Needed for DataStore)
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 

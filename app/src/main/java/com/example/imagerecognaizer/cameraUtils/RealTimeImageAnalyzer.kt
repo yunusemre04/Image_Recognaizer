@@ -44,7 +44,7 @@ class RealTimeImageAnalyzer(
         isProcessing = false
     }
 
-    // ... toBitmap() aynı kalabilir, sadece filter=true eklersin:
+    // ... toBitmap() stays the same, just add filter=true:
     private fun ImageProxy.toBitmap(rotationDegrees: Int): Bitmap? {
         val yBuffer = planes[0].buffer
         val uBuffer = planes[1].buffer
@@ -65,10 +65,10 @@ class RealTimeImageAnalyzer(
         yuvImage.compressToJpeg(Rect(0, 0, width, height), 100, out)
         val yuv = out.toByteArray()
 
-        // Asıl burada bitmap tanımlanıyor
+        // Bitmap is defined here
         var bitmap = BitmapFactory.decodeByteArray(yuv, 0, yuv.size)
 
-        // Ölçeklendirme sırasında filtreleme açıldı
+        // Filtering is enabled during scaling
         bitmap = Bitmap.createScaledBitmap(bitmap, 299, 299, true)
 
         val matrix = Matrix().apply { postRotate(rotationDegrees.toFloat()) }

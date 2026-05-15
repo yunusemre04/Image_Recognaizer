@@ -39,17 +39,17 @@ fun CameraPreview(
 
     LaunchedEffect(permissionState.status) {
         when (permissionState.status) {
-            // Düzeltme: PermissionStatus.Denied() şeklinde nesne oluştur
+            // Fix: Create PermissionStatus.Denied object
             is PermissionStatus.Denied -> {
                 permissionState.launchPermissionRequest()
             }
             is PermissionStatus.Granted -> {
-                // İzin verilmiş
+                // Permission granted
             }
         }
     }
 
-// Daha iyi bir kontrol: Kullanıcı izni reddetti mi?
+// Better check: Did the user deny the permission?
     if (!permissionState.status.isGranted) {
         Column {
             Text("Kamera izni gerekiyor", color = Color.Red)
