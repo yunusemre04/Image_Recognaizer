@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Image Recognizer</string>
+    <string name="app_subtitle">Gelişmiş Nesne Tanıma Sistemi</string>
+    <string name="gallery_analysis">Galeri Analizi</string>
+    <string name="gallery_analysis_desc">Galerideki fotoğrafları analiz edin</string>
+    <string name="live_camera">Canlı Kamera</string>
+    <string name="live_camera_desc">Gerçek zamanlı nesneleri bulun</string>
+    <string name="history">Geçmiş</string>
+    <string name="image_recognition">Görüntü Tanıma</string>
+    <string name="back">Geri</string>
+    <string name="select_image">Görsel Seç</string>
+    <string name="classify">Sınıflandır</string>
+    <string name="prediction">Tahmin: %1$s</string>
+    <string name="other_possibilities">Diğer ihtimaller:</string>
+    <string name="analyzing">Analiz ediliyor...</string>
+    <string name="history_predictions">Geçmiş Tahminler</string>
+    <string name="no_history_yet">Henüz geçmişte bir tahmin yok.</string>
+    <string name="image_load_failed">Resim Yüklenemedi</string>
+    <string name="delete">Sil</string>
+    <string name="language_english">İngilizce</string>
+    <string name="language_turkish">Türkçe</string>
+    <string name="switch_language">Dili Değiştir</string>
+</resources>

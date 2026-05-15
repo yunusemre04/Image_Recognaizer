@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Image Recognizer</string>
+    <string name="app_subtitle">Advanced Object Recognition System</string>
+    <string name="gallery_analysis">Gallery Analysis</string>
+    <string name="gallery_analysis_desc">Analyze photos in gallery</string>
+    <string name="live_camera">Live Camera</string>
+    <string name="live_camera_desc">Find objects in real time</string>
+    <string name="history">History</string>
+    <string name="image_recognition">Image Recognition</string>
+    <string name="back">Back</string>
+    <string name="select_image">Select Image</string>
+    <string name="classify">Classify</string>
+    <!-- Use %s or %1$s for string formatting -->
+    <string name="prediction">Prediction: %1$s</string>
+    <string name="other_possibilities">Other possibilities:</string>
+    <string name="analyzing">Analyzing...</string>
+    <string name="history_predictions">Past Predictions</string>
+    <string name="no_history_yet">No history yet.</string>
+    <string name="image_load_failed">Image Failed to Load</string>
+    <string name="delete">Delete</string>
+    <string name="language_english">English</string>
+    <string name="language_turkish">Turkish</string>
+    <string name="switch_language">Language</string>
+</resources>
